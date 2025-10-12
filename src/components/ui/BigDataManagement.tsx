@@ -90,7 +90,7 @@ const BigDataManagement = () => {
       {/* Right Side Image */}
       <div className="w-full lg:w-1/2 flex justify-center items-center lg:mt-0 mr-10">
         <img
-          src="/images/datamanagement/DM-IMG-3.png" // replace with actual image path
+          src="/images/dataManagement/DM-IMG-3.png"
           alt="Big Data Management"
           className="rounded-xl shadow-2xl"
         />

@@ -32,7 +32,7 @@ const BigDataManagement = () => {
 
       <div className="w-full  flex justify-center items-center lg:mt-0 mr-10">
         <img
-          src="/images/datamanagement/DM-IMG-3.png"
+          src="/images/dataManagement/DM-IMG-3.png"
           alt="Big Data Management"
           className="rounded-xl shadow-2xl"
         />
