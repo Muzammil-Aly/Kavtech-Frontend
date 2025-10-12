@@ -3,6 +3,13 @@ import React from "react";
 import Image from "next/image";
 import AnalyticsCard from "./AIDesignCard";
 import TownHallCard from "./TownHallCard";
+type CardProps = {
+  card: {
+    id: number;
+    title: string;
+    image: string;
+  };
+};
 
 export default function WhyUsSection() {
   const chips = [
@@ -146,32 +153,7 @@ export default function WhyUsSection() {
   );
 }
 
-/* Reusable Card Component */
-// const Card = ({ card }: any) => (
-//   <div
-//     className="
-//       w-[283px] h-[390px]
-//       rounded-2xl
-//       bg-[rgba(255,255,255,0.02)]
-//       border border-[rgba(255,255,255,0.04)]
-//       backdrop-blur-sm
-//       shadow-[0_8px_30px_rgba(2,6,23,0.6)]
-//       overflow-hidden
-//       flex-shrink-0
-//       transition-transform
-//       duration-500
-//       hover:-translate-y-2
-//     "
-//   >
-//     <div className="relative w-full h-full">
-//       <Image src={card.image} alt={card.title} fill className="object-cover" />
-//     </div>
-//   </div>
-// );
-
-/* Reusable Card Component */
-/* Reusable Card Component */
-const Card = ({ card }: any) => {
+const Card = ({ card }: CardProps) => {
   const isAmber = card.title === "Amber" || card.title === "Traffic Source";
 
   return (
