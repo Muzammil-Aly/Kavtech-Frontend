@@ -227,12 +227,12 @@ const BeyondCodeSection: React.FC = () => {
               </div>
             </div>
           </div>
-
+          <div className="border-l-2  border-gray-700    "></div>
           <div
-            className="border-l-2 border-gray-700  w-[570px] h-[205px] text-center"
+            className="w-[570px] h-[205px] text-center "
             style={{ fontFamily: "'Roboto Mono', monospace" }}
           >
-            <p className="text-center text-[20px] font-bold text-[#6A6B6C]   ">
+            <p className="text-center text-[22px]  font-bold text-[#6A6B6C]   ">
               <span
                 className="text-gray-500 text-[56px] font-bold leading-none "
                 style={{ fontFamily: "'Roboto Mono', monospace" }}
@@ -240,18 +240,22 @@ const BeyondCodeSection: React.FC = () => {
                 “
               </span>
               Kavtech is incrementally
-              <span className="text-white items-center">
-                {" "}
-                turning my Product into an AI-native operating system
+              <span className="text-white  "> turning </span>
+            </p>
+            <p className="text-center text-[18px]  font-bold text-[#6A6B6C]">
+              <span className="text-white">
+                &nbsp;&nbsp;my Product into an AI-native operating system
               </span>
               <span className="text-[#6A6B6C]"> and I’m so here for it.</span>
+            </p>
+            <div className="flex justify-center relative top-[-10] ml-[380px]">
               <span
                 className="text-gray-500 text-[56px] font-bold leading-none"
                 style={{ fontFamily: "'Roboto Mono', monospace" }}
               >
                 ”
               </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>
