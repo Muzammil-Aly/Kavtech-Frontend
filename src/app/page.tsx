@@ -16,6 +16,7 @@ import SolutionsDesignedForImpact from "@/components/ui/SolutionsDesignedForImpa
 import AIDesignCard from "@/components/ui/DesignCard";
 import ContactSection from "@/components/ui/ContactSection";
 import ProvenResults from "@/components/ui/ProvenResults";
+import ChemcoCard from "@/components/ui/ChemcoCard";
 
 export default function HomePage() {
   return (
