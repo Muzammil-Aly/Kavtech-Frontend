@@ -46,19 +46,19 @@ const BeyondCodeSection: React.FC = () => {
     {
       name: "Adam Whitcroft",
       role: "Designer, Owner",
-      image: "/images/innovator/TeamMemberone.png",
+      image: "/images/Innovator/TeamMemberone.png",
       twitterHandle: "@AdamWhitcroft",
     },
     {
       name: "Guillermo Rauch",
       role: "CEO, Vercel",
-      image: "/images/innovator/TeamMemberone.png",
+      image: "/images/Innovator/TeamMemberone.png",
       twitterHandle: "@rauchg",
     },
     {
       name: "Koen Bok",
       role: "Founder, Framer",
-      image: "/images/innovator/TeamMemberone.png",
+      image: "/images/Innovator/TeamMemberone.png",
       twitterHandle: "@koenbok",
     },
   ];

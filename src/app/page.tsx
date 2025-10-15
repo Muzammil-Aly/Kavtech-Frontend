@@ -17,6 +17,7 @@ import AIDesignCard from "@/components/ui/DesignCard";
 import ContactSection from "@/components/ui/ContactSection";
 import ProvenResults from "@/components/ui/ProvenResults";
 import ChemcoCard from "@/components/ui/ChemcoCard";
+import Footer from "@/components/ui/footer/Footer";
 
 export default function HomePage() {
   return (
@@ -33,6 +34,7 @@ export default function HomePage() {
         {/* <DataManagementAgentCard /> */}
         {/* <AIDesignCard /> */}
         <ProvenResults />
+        <Footer />
       </>
     </main>
   );
