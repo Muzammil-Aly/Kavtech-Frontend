@@ -5,7 +5,7 @@ const InnovatorComponent: React.FC = () => {
     <section
       className="w-full flex flex-col items-center justify-center text-center text-white mt-60"
       style={{
-        backgroundImage: 'url("/images/Innovator/InnovatorComponent.png")',
+        backgroundImage: 'url("/images/Innovator/innovatorComponent.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
