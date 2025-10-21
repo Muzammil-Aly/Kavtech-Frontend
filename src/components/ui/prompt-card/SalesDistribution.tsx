@@ -15,7 +15,7 @@ const SalesDistribution = () => {
   return (
     <>
       <div
-        className="relative py-12 flex items-center gap-10 pl-20"
+        className=" py-12 flex items-center gap-10 px-20 "
         style={{
           borderRadius: "40px",
           background:
@@ -106,7 +106,7 @@ const SalesDistribution = () => {
             </div>
 
             {/* Right Side: AI Adoption */}
-            <div className="flex flex-col items-center space-y-4">
+            <div className=" relative flex flex-col items-center space-y-4">
               {/* 62% - AI Adoption Pill */}
               <div
                 className="relative flex-shrink-0 flex  justify-center flex flex-col justify-center p-2  "
@@ -140,7 +140,7 @@ const SalesDistribution = () => {
               </div>
 
               <div
-                className="flex items-center justify-center absolute right-20   "
+                className="flex items-center justify-center absolute left-30  "
                 style={{
                   width: "89.255px",
                   height: "89.255px",
@@ -260,7 +260,7 @@ const SalesDistribution = () => {
         </div>
 
         {/* Image */}
-        <div className="flex justify-center relative z-10">
+        <div className="flex justify-center relative z-10  ">
           <img
             src="/images/SupplyChain/personUsingtech.jpg"
             alt="Supply Chain"
