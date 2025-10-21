@@ -73,6 +73,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // import router
+import LoadingOverlay from "./utils/LoadingOverlay";
 
 export interface Option {
   label: string;
@@ -96,17 +97,29 @@ const PromptCard: React.FC<PromptCardProps> = ({
   onSelect,
 }) => {
   const [text, setText] = useState("");
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const handleSelect = (option: Option) => {
+  // const handleSelect = (option: Option) => {
+  //   onSelect?.({ text, option });
+  //   if (option.route) {
+  //     router.push(option.route); // navigate to route
+  //   }
+
+  const handleSelect = async (option: Option) => {
     onSelect?.({ text, option });
     if (option.route) {
-      router.push(option.route); // navigate to route
+      setLoading(true);
+      // optional delay for loader visibility
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      router.push(option.route);
     }
   };
 
   return (
     <div className="w-full max-w-[681px] mx-auto sm:h-[207px] rounded-[24px] border border-gray-500/50 bg-[#06060666] p-4 sm:p-6 flex flex-col justify-between">
+      {loading && <LoadingOverlay />}
+
       <textarea
         className="w-full bg-transparent text-white text-lg placeholder-gray-400 resize-none outline-none"
         placeholder={placeholder}
