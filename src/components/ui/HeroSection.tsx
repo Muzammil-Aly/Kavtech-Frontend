@@ -82,18 +82,18 @@ export default function HeroSection() {
   return (
     <section
       className="
-        relative flex flex-col items-center justify-center
-        min-h-screen text-center px-6 overflow-hidden
-        bg-[#000000] text-white
-        mt-50
-        gap-10
-      "
+    relative flex flex-col items-center justify-center
+    h-screen text-center px-6 overflow-hidden
+    bg-[#000000] text-white
+    mt-12
+    gap-10
+  "
     >
       {/* Gradient background glow */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(100%_100%_at_50%_0%,rgba(228,130,66,0.2)_0%,rgba(0,0,0,1)_80%)]"></div>
 
       {/* Hero Content */}
-      <div className="max-w-[1040px] flex flex-col items-center gap-6">
+      <div className="max-w-[1040px] flex flex-col items-center gap-2">
         <h1
           className="
     text-[clamp(48px,8vw,120px)]
@@ -103,7 +103,7 @@ export default function HeroSection() {
           style={{
             fontFamily:
               "SF Pro Display, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif",
-            whiteSpace: "nowrap", // ✅ keep all on one line
+            whiteSpace: "nowrap",
           }}
         >
           Launch your <ChangingBanner /> <br></br>in minutes

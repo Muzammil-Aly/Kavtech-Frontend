@@ -182,8 +182,8 @@ export default function ProvenResults() {
           </div>
         </div>
       </div>
-      <InnovatorComponent />
-      <BeyondCodeSection />
+      {/* <InnovatorComponent /> */}
+      {/* <BeyondCodeSection /> */}
     </>
   );
 }

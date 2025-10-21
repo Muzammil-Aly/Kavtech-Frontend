@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 @import "tailwindcss";
+
 /* @import "tw-animate-css"; */
 /* Apply black background to the whole page */
 body {
@@ -7,4 +8,6 @@ body {
   color: white; /* optional, to make text visible */
   margin: 0; /* remove default spacing */
   min-height: 100vh; /* ensure it covers full height */
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
 }

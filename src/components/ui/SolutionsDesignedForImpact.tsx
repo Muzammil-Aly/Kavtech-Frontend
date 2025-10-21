@@ -113,7 +113,7 @@ export default function SolutionsDesignedForImpact() {
             </article>
           ))}
         </div>
-        <ContactSection />
+        {/* <ContactSection /> */}
       </div>
     </section>
   );

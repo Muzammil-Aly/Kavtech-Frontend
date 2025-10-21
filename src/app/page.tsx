@@ -18,6 +18,8 @@ import ContactSection from "@/components/ui/ContactSection";
 import ProvenResults from "@/components/ui/ProvenResults";
 import ChemcoCard from "@/components/ui/ChemcoCard";
 import Footer from "@/components/ui/footer/Footer";
+import InnovatorComponent from "@/components/ui/InnovatorComponent";
+import BeyondCodeSection from "@/components/ui/BeyondCodeSection";
 
 export default function HomePage() {
   return (
@@ -31,9 +33,14 @@ export default function HomePage() {
         <BigDataManagement />
         <BookingReport />
         <SolutionsDesignedForImpact />
+        <div className="ml-30 mt-20">
+          <ContactSection />
+        </div>
         {/* <DataManagementAgentCard /> */}
         {/* <AIDesignCard /> */}
         <ProvenResults />
+        <InnovatorComponent />
+        <BeyondCodeSection />
         <Footer />
       </>
     </main>
