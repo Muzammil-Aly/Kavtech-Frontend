@@ -25,7 +25,7 @@ export default function HomePage() {
   return (
     <main>
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroSection />
         <WhyUsSection />
         {/* <MadeWithAI /> */}
@@ -41,7 +41,7 @@ export default function HomePage() {
         <ProvenResults />
         <InnovatorComponent />
         <BeyondCodeSection />
-        <Footer />
+        {/* <Footer /> */}
       </>
     </main>
   );
