@@ -38,7 +38,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navabar"; // adjust path
 import Footer from "../components/ui/footer/Footer"; // adjust path
 import "./globals.css";
-
+import { Providers } from "./providers";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -68,7 +68,7 @@ export default function RootLayout({
         <Navbar />
 
         {/* Page content */}
-        <main>{children}</main>
+        <Providers>{children}</Providers>
 
         {/* Global Footer */}
         <Footer />

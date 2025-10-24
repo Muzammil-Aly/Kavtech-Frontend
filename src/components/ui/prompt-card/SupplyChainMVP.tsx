@@ -4,7 +4,8 @@ import SolutionsDesignedForImpact from "../SolutionsDesignedForImpact";
 import ProvenResults from "../ProvenResults";
 import ContactSection from "../ContactSection";
 import SalesDistribution from "./SalesDistribution";
-
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/redux/store";
 const SupplyChainMVP = () => {
   const buttonLabels = [
     "Audit to ROI in 30 Days",
@@ -12,7 +13,16 @@ const SupplyChainMVP = () => {
     "Custom AI Modules",
     "Secure. Embedded, Always On",
   ];
-
+  const {
+    promptText,
+    result,
+    heading,
+    paragraph,
+    subHeading = "",
+  } = useSelector((state: RootState) => state.prompt);
+  const words = subHeading.split(" ");
+  const lastThree = words.slice(-3).join(" "); // last 3 words
+  const mainText = words.slice(0, -3).join(" "); // everything before last 3
   return (
     <>
       <div
@@ -58,7 +68,7 @@ const SupplyChainMVP = () => {
             </h3>
           </div>
 
-          <h2
+          {/* <h2
             className="mb-6"
             style={{
               fontFamily: "SF Pro, ui-sans-serif, system-ui",
@@ -71,6 +81,20 @@ const SupplyChainMVP = () => {
           >
             Jump-Start Your Project With Our{" "}
             <span style={{ color: "#E48242" }}>Supply Chain MVP</span>
+          </h2> */}
+
+          <h2
+            className="mb-6"
+            style={{
+              fontFamily: "SF Pro, ui-sans-serif, system-ui",
+              fontWeight: 700,
+              fontSize: "64px",
+              lineHeight: "88px",
+              letterSpacing: "-1.76px",
+              color: "#F1F1EF",
+            }}
+          >
+            {mainText} <span style={{ color: "#E48242" }}>{lastThree}</span>
           </h2>
 
           {/* Paragraph */}

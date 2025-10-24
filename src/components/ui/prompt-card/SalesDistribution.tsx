@@ -15,7 +15,7 @@ const SalesDistribution = () => {
   return (
     <>
       <div
-        className=" py-12 flex items-center gap-10 px-20 "
+        className=" py-12 flex items-center gap-10 px-20  overflow-hidden  "
         style={{
           borderRadius: "40px",
           background:

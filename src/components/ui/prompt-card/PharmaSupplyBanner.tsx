@@ -1,27 +1,29 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import SupplyChainMVP from "./SupplyChainMVP";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/redux/store";
 const PharmaSupplyBanner: React.FC = () => {
+  const { promptText, heading, paragraph } = useSelector(
+    (state: RootState) => state.prompt
+  );
   return (
     <>
       <div className="bg-black mt-10 text-white py-16 px-4 flex flex-col items-center text-center">
         {/* Heading */}
-        <h1
-          className="font-sans font-normal text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] leading-snug sm:leading-[60px] md:leading-[72px] lg:leading-[80px] max-w-[90%] md:max-w-[800px] lg:max-w-[1040px] tracking-tight"
-          style={{
-            fontFamily: "SF Pro",
-            transform: "rotate(0deg)",
-            opacity: 1,
-          }}
-        >
-          Digitizing your pharma supply & distribution chain starts here.
+        <h1 className="font-sans font-normal text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] leading-snug sm:leading-[60px] md:leading-[72px] lg:leading-[80px] max-w-[90%] md:max-w-[800px] lg:max-w-[1040px] tracking-tight">
+          {heading}
+          {/* Digitizing your pharma supply & distribution chain starts here. */}
         </h1>
 
         {/* Subtext */}
         <p className="font-sans font-normal text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed tracking-normal max-w-[90%] md:max-w-[822px] mt-6">
-          You mentioned the need for warehouse stock management, order-taking,
+          {/* You mentioned the need for warehouse stock management, order-taking,
           and agent monitoring apps. Here’s how we can turn that into a tailored
-          solution.
+          solution. */}
+
+          {paragraph}
         </p>
 
         {/* Buttons */}
