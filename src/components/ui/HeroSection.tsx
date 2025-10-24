@@ -70,13 +70,22 @@ function ChangingBanner() {
 // ✅ Main Hero Section
 export default function HeroSection() {
   const handlePromptSelect = ({
-    text,
+    heading,
+    subHeading,
+    paragraph,
     option,
   }: {
-    text: string;
+    heading: string;
+    subHeading: string;
+    paragraph: string;
     option: Option;
   }) => {
-    console.log("User prompt:", text, "Selected option:", option);
+    console.log("Generated content:", {
+      heading,
+      subHeading,
+      paragraph,
+      option,
+    });
   };
 
   return (
